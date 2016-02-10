@@ -1,0 +1,79 @@
+@import url("//fonts.googleapis.com/css?family=Wendy+One");
+section, footer {
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+section#idwsu, footer {
+    margin: 50px auto;
+}
+
+section.ads {
+    margin: 0 auto;
+    min-height: 100px;
+}
+
+section#idwsu {
+    font: 36pt 'Wendy One', "Trebuchet MS", Verdana, sans-serif;
+}
+
+section#idwsu .fb-like {
+    font: 1px sans-serif;
+}
+
+section#idwsu #terminebutton,
+section#idwsu .fb-like {
+    display: inline;
+}
+
+.dim {
+    opacity: .5;
+}
+
+.dim:hover {
+    opacity: 1;
+}
+
+aside#legal,
+aside#upcoming {
+    font: 8pt "Helvetica Neue", Verdana, sans-serif;
+    font-size: 8pt;
+}
+
+aside#legal p:first-line,
+aside#upcoming p:first-line {
+    font-weight: bold;
+}
+
+aside#upcoming .progress {
+    height: 15px;
+    margin: 4px auto;
+    width: 90%;
+}
+
+div.progress-main {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 24px;
+    height: 24px;
+}
+
+div.progress-main .bar,
+div.progress-main span {
+    font-size: 12px;
+    display: block;
+}
+
+@media screen and (max-width: 960px) {
+    div.progress-main {
+        height: 34px !important;
+        line-height: 16px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.progress-main {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+}
