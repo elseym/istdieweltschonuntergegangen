@@ -1,3 +1,12 @@
 RewriteEngine   On
 RewriteCond     %{SERVER_PORT}  !^443$
 RewriteRule     (.*)            https://%{HTTP_HOST}/$1 [L]
+
+Header  always  set     Strict-Transport-Security "max-age=31536000; includeSubdomains; preload"
+Header  always  set     Content-Security-Policy   "default-src https:; script-src https: 'unsafe-inline'; style-src https: 'unsafe-inline'"
+Header  always  set     X-Frame-Options           "SAMEORIGIN"
+Header  always  set     X-Xss-Protection          "1; mode=block"
+Header  always  set     X-Content-Type-Options    "nosniff"
+
+Header  always  unset   Server
+Header  always  unset   X-Powered-By
